@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PrivacyNotice from "@/components/privacy-notice";
 
 export default function SiteFooter() {
   return (
@@ -36,7 +37,10 @@ export default function SiteFooter() {
       <div className="footer-bottom">
         <div className="section-wrap footer-bottom-inner">
           <span>© Garage 360. Todos los derechos reservados.</span>
-          <span>Hecho para cuidar lo que te mueve.</span>
+          <div className="footer-legal">
+            <span>Hecho para cuidar lo que te mueve.</span>
+            <PrivacyNotice />
+          </div>
         </div>
       </div>
     </footer>
