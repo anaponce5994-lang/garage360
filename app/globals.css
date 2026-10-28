@@ -172,6 +172,20 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .footer-column a:hover, .footer-brand > a:last-child:hover { color: #ff777e; }
 .footer-bottom { border-top: 1px solid #303030; }
 .footer-bottom-inner { min-height: 46px; display: flex; align-items: center; justify-content: space-between; gap: 20px; color: #777; font-size: 10px; }
+.footer-legal { display: flex; align-items: center; gap: 19px; }
+.privacy-trigger { padding: 0; border: 0; color: #bdbdbd; background: transparent; font-size: inherit; cursor: pointer; }
+.privacy-trigger:hover { color: #ff777e; }
+.privacy-dialog { position: fixed; inset: 0; width: min(580px, calc(100% - 32px)); max-height: min(82vh, 700px); margin: auto; padding: 0; overflow: hidden; border: 1px solid #dededb; border-radius: 6px; color: var(--ink); background: var(--paper); box-shadow: 0 24px 80px #0005; }
+.privacy-dialog::backdrop { background: #101010b8; backdrop-filter: blur(3px); }
+.privacy-dialog-header { padding: 24px 27px 19px; color: #fff; background: #191919; }
+.privacy-label { color: #f27b81; font-size: 9px; font-weight: 800; letter-spacing: 1.5px; }
+.privacy-dialog-header h2 { margin: 9px 0 0; font-size: 24px; letter-spacing: -.5px; }
+.privacy-dialog-content { max-height: calc(82vh - 155px); padding: 21px 27px; overflow-y: auto; }
+.privacy-dialog-content p { margin: 0 0 15px; color: #686868; font-size: 12px; line-height: 1.75; }
+.privacy-dialog-content h3 { margin: 18px 0 6px; font-size: 13px; }
+.privacy-dialog-content a { color: var(--red); font-weight: 700; }
+.privacy-dialog-actions { display: flex; justify-content: flex-end; padding: 13px 27px; border-top: 1px solid var(--line); background: #fafaf9; }
+.privacy-dialog-actions .button { min-width: 100px; min-height: 39px; }
 
 .page-banner { padding: 46px 0 36px; border-bottom: 1px solid var(--line); background: linear-gradient(105deg, #f7f7f5, #fff 70%); }
 .page-banner h1 { margin: 0; font-size: clamp(30px, 4vw, 42px); letter-spacing: -1.5px; }
@@ -307,6 +321,11 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .footer-main { grid-template-columns: repeat(2, 1fr); gap: 27px 18px; padding-block: 35px; }
   .footer-brand { grid-column: span 2; }
   .footer-bottom-inner { align-items: flex-start; flex-direction: column; justify-content: center; gap: 7px; padding-block: 13px; font-size: 9px; }
+  .footer-legal { align-items: flex-start; flex-direction: column; gap: 7px; }
+  .privacy-dialog-header { padding: 20px 19px 16px; }
+  .privacy-dialog-header h2 { font-size: 21px; }
+  .privacy-dialog-content { padding: 17px 19px; }
+  .privacy-dialog-actions { padding: 11px 19px; }
   .page-banner { padding: 35px 0 28px; }
   .page-banner h1 { font-size: 31px; }
   .catalog-section { padding-top: 27px; }
