@@ -71,7 +71,8 @@ export default function Home() {
           </div>
           <div className="about-number"><strong>360°</strong><span>atención para<br />tu automóvil</span></div>
         </div>
-      </section>
+      </section> 
+      <p className="py-6 text-center text-sm">Proyecto final de la materia Ingeniería de software - Ponce Santero Ana Patricia - 214459944</p>
     </>
   );
 }
